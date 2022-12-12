@@ -9,6 +9,6 @@ let package = Package(
         ])
     ],
     targets: [
-        .target(name: "inotify")
+        .target(name: "inotify", path: "Sources")
     ]
 )
