@@ -2,5 +2,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "inotify"
+    name: "inotify",
+    products: [
+        .library(name: "inotify", targets: [
+            "inotify"
+        ])
+    ],
+    targets: [
+        .target(name: "inotify")
+    ]
 )
